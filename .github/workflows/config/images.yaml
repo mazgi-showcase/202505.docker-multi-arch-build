@@ -1,0 +1,36 @@
+images:
+  alpine:
+    image_version_arg_key: ALPINE_VERSION
+    versions:
+      - version: "3.21"
+        latest: true
+      - version: "3.20"
+      - version: "3.19"
+      - version: "3.18"
+    architectures:
+      - platform: linux/amd64
+        runner: ubuntu-24.04
+      - platform: linux/arm64
+        runner: ubuntu-24.04-arm
+  bash:
+    image_version_arg_key: BASH_VERSION
+    versions:
+      - version: "5"
+        latest: true
+      - version: "4"
+    architectures:
+      - platform: linux/amd64
+        runner: ubuntu-24.04
+      - platform: linux/arm64
+        runner: ubuntu-24.04-arm
+  busybox:
+    image_version_arg_key: BUSYBOX_VERSION
+    versions:
+      - version: "1.37.0"
+        latest: true
+      - version: "1.36.1"
+    architectures:
+      - platform: linux/amd64
+        runner: ubuntu-24.04
+      - platform: linux/arm64
+        runner: ubuntu-24.04-arm

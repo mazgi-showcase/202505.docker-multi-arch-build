@@ -1,7 +1,7 @@
 name: build-and-publish-the-container-image
 
 env:
-  IMAGE_PREFIX: 202505.docker-multi-arch-build
+  IMAGE_PREFIX: 202505.docker-multi-arch-build-
 
 on:
   workflow_call:

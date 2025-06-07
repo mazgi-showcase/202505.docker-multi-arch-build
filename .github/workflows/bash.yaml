@@ -8,6 +8,8 @@ on:
     paths:
       - ".github/workflows/**"
       - "Dockerfile.d/bash/**"
+  schedule:
+    - cron: '1 2 3 * *' # 02:01, 3rd day every month
   workflow_dispatch:
 
 jobs:
